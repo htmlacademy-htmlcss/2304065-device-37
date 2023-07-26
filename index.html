@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="index-header">
-      <div class="index-container">
+      <div class="index-wrapper">
         <a class="index-logo" href="#">
           <img class="img-logo" src="#" width="145" height="36" alt="Интернет-магазин Девайс">
         </a>
@@ -23,34 +23,72 @@
             </form>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="#">Войти</a>
+            <a class="button button-menu" href="#">Войти</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="#">Сравнить</a>
+            <a class="button button-menu" href="#">Сравнить</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="#">Корзина</a>
+            <a class="button button-menu" href="#">Корзина</a>
           </li>
         </menu>
         <nav>
           <ul class="navigation-list">
             <li class="catalog-toogler">
-              <a class="navigation-link">Каталог товаров</a>
+              <a class="button button-nav">Каталог товаров</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Доставка</a>
+              <a class="button button-nav" href="#">Доставка</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Гарантия</a>
+              <a class="button button-nav" href="#">Гарантия</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Контакты</a>
+              <a class="button button-nav" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="index-main">
+      <section class="index-slider">
+        <h1 class="visually-hidden">Интернет-магазин Девайс.</h1>
+        <div class="index-wrapper">
+          <h2 class="visually-hidden">Популярные товары.</h2>
+          <ol class="slider-list">
+            <li class="slider-item active">
+              <figure>
+                <img class="slider-img" src="#" width="560" height="560" alt="Квадрокоптер с красным лазером.">
+                <figcaption>
+                  <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
+                  <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                  <a class="button button-primary" href="#">Подробнее</a>
+                  <p class="slider-subtitle">800 м</p>
+                  <p class="subtitle-description">Дальность полета</p>
+                </figcaption>
+              </figure>
+            </li>
+            <!--Позже здесь будут остальные элементы слайдера-->
+          </ol>
+          <ol class="slider-pagination">
+            <li class="pagination-item">
+              <a class="pagination-link active">
+                <span class="visually-hidden">Первый товар.</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link">
+                <span class="visually-hidden">Второй товар.</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link active">
+                <span class="visually-hidden">Третий товар.</span>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </section>
       <!--Здесь будет основная часть-->
     </main>
     <footer class="index-footer">

@@ -58,13 +58,29 @@
           <ol class="slider-list">
             <li class="slider-item active">
               <figure>
-                <img class="slider-img" src="#" width="560" height="560" alt="Квадрокоптер с красным лазером.">
+                <div class="img-wrapper">
+                  <button class="button slider-prev" type="button">
+                    <span class="visually-hidden">Предыдущий товар.</span>
+                  </button>
+                  <img class="slider-img" src="#" width="560" height="560" alt="Квадрокоптер с красным лазером.">
+                  <button class="button slider-next">
+                    <span class="visually-hidden">Следующий товар.</span>
+                  </button>
+                </div>
                 <figcaption>
                   <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
                   <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                   <a class="button button-primary" href="#">Подробнее</a>
-                  <p class="slider-subtitle">800 м</p>
-                  <p class="subtitle-description">Дальность полета</p>
+                  <ul class="slider-feature">
+                    <li class="feature-item">
+                      <p class="feature-title">800 м</p>
+                      <p class="feature-descriprion">Дальность полета</p>
+                    </li>
+                    <li class="feature-item">
+                      <p class="feature-title">50 м</p>
+                      <p class="feature-descriprion">Радиус поражения</p>
+                    </li>
+                  </ul>
                 </figcaption>
               </figure>
             </li>

@@ -72,7 +72,7 @@
         </ol>
       </header>
       <section class="filters">
-        <h2 class="title products-title">Фильтр:</h2>
+        <h2 class="title filters-title">Фильтр:</h2>
         <form class="filters-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="products-filters">
             <legend>Стоимость</legend>
@@ -141,7 +141,26 @@
         </form>
       </section>
       <section class="sorting">
-
+        <h2 class="title sorting-title">Сортировка:</h2>
+        <select class="sorting-range" aria-label="Сортировка.">
+          <option value="popular">Популярные</option>
+          <option value="price">Дорогие</option>
+          <option value="feedback">С отзывами</option>
+        </select>
+        <div class="button-wrapper">
+          <ul class="button-wrapper-list">
+            <li class="button-wrapper-item">
+              <a class="button button-ascending" href="#">
+                <span class="visually-hidden">По возрастанию.</span>
+              </a>
+            </li>
+            <li class="button-wrapper-item">
+              <a class="button button-descending" href="#">
+                <span class="visually-hidden">По убыванию.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--footer-->

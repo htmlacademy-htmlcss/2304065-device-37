@@ -57,18 +57,50 @@
     </header>
     <!--main-->
     <main class="catalog">
-      <h1 class="title">Моноподы для селфи</h1>
-      <ol class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="#">Каталог товаров</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Главная</a>
-        </li>
-      </ol>
+      <header class="catalog-header">
+        <h1 class="title">Моноподы для селфи</h1>
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </li>
+        </ol>
+      </header>
+      <section class="products">
+        <h2 class="title products-title">Фильтр:</h2>
+        <form class="filters">
+          <fieldset class="products-filters">
+            <legend>Стоимость</legend>
+            <!--Здесь будет ползунок-->
+          </fieldset>
+          <fieldset class="products-filters">
+            <legend>Цвет</legend>
+            <ul class="products-filters-list">
+              <li class="products-filters-item">
+                <label class="color">
+                  <input class="visually-hidden input-checkbox" type="checkbox" name="black" checked>
+                  <span class="products-checkbox"></span>
+                  <span class="products-filters-description">Черный</span>
+                </label>
+              </li>
+              <li class="products-filters-item">
+                <label class="color">
+                  <input class="visually-hidden input-checkbox" type="checkbox" name="white" checked>
+                  <span class="products-checkbox"></span>
+                  <span class="products-filters-description">Белый</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+
+      </section>
+
     </main>
     <!--footer-->
     <footer class="catalog-footer">

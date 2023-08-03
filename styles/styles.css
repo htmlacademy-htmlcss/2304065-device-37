@@ -143,7 +143,17 @@ html {
   text-decoration: none;
 }
 
+/* services */
+
+.services {
+  background-image: linear-gradient(to bottom, #ffffff 26%, #f0f0f0 26%);
+}
+
 /* delivery */
+
+.delivery {
+  background-color: #f0f0f0;
+}
 
 .delivery-link {
   text-decoration: none;
@@ -165,6 +175,12 @@ html {
 .phone-link {
   font-style: normal;
   color: #444444;
+}
+
+/* subscribe */
+
+.subscribe {
+  background-color: #f0f0f0;
 }
 
 /* footer */

@@ -98,6 +98,10 @@ html {
   text-transform: none;
 }
 
+.button-primary.active {
+  color: #ffe17f;
+}
+
 /* title */
 
 .title {

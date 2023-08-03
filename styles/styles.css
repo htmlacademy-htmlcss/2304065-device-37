@@ -29,6 +29,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -36,7 +39,12 @@ body {
   font-weight: 400;
   color: #444444;
 
+  min-height: 100%;
   margin: 0;
+}
+
+html {
+  height: 100%;
 }
 
 .visually-hidden {
@@ -47,11 +55,13 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
+
   white-space: nowrap;
-
-  -webkit-clip-path: inset(100%);
-
-          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.index-main,
+.catalog {
+  flex-grow: 1;
 }

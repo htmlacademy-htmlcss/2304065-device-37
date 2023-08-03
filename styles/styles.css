@@ -120,6 +120,13 @@ html {
   text-transform: uppercase;
 }
 
+.contacts-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
 /* slider */
 
 .feature-title {
@@ -140,4 +147,22 @@ html {
 
 .delivery-link {
   text-decoration: none;
+}
+
+/* information */
+
+.about-us-list {
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.36px;
+}
+
+.address-description {
+  font-style: normal;
+}
+
+.phone-link {
+  font-style: normal;
+  color: #444444;
 }

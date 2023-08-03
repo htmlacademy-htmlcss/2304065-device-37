@@ -113,6 +113,13 @@ html {
   color: #000000;
 }
 
+.delivery-title {
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
 /* slider */
 
 .feature-title {
@@ -127,4 +134,10 @@ html {
   text-decoration: none;
   color: #000000;
   letter-spacing: -0.36px;
+}
+
+/* delivery */
+
+.delivery-link {
+  text-decoration: none;
 }

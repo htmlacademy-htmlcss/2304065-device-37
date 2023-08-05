@@ -218,6 +218,44 @@ html {
   color: #000000;
 }
 
+.sorting-range {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.products-cards-link {
+  text-decoration: none;
+}
+
+.products-description {
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.36px;
+}
+
+.products-price {
+  line-height: normal;
+  color: #444444;
+}
+
+.pagination-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+
+  opacity: 0.3;
+}
+
+.pagination-link.active {
+  opacity: 0.6;
+}
+
 /* footer */
 
 .index-footer,

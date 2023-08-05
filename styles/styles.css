@@ -98,6 +98,10 @@ html {
   text-transform: none;
 }
 
+.button-menu-light {
+  opacity: 0.3;
+}
+
 .button-primary.active {
   color: #ffe17f;
 }
@@ -125,6 +129,13 @@ html {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+}
+
+.filters-title,
+.sorting-title {
+  font-size: 16px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
 }
 
 /* slider */
@@ -183,9 +194,34 @@ html {
   background-color: #f0f0f0;
 }
 
+/* breadcrumbs */
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* filters */
+
+.filters-legend {
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.36px;
+}
+
+.products-filters-description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
 /* footer */
 
-.index-footer {
+.index-footer,
+.catalog-footer {
   background-color: #444444;
 }
 

@@ -157,6 +157,26 @@ html {
   padding: 0;
 }
 
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+}
+
+.catalog-toogler {
+  width: 350px;
+  margin-right: auto;
+}
+
+.navigation-item {
+  width: 127px;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 45px;
+}
+
 /* main */
 
 .index-main {

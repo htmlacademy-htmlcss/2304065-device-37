@@ -137,6 +137,12 @@ html {
   text-transform: uppercase;
 }
 
+/* header */
+
+.header-wrapper {
+  background-image: linear-gradient(to bottom, #ffffff 17.6%, #ffe17f 17.6%);
+}
+
 /* slider */
 
 .feature-title {

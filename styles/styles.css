@@ -227,6 +227,12 @@ html {
   color: #000000;
 }
 
+/* products */
+
+.products {
+  background-color: #ffffff;
+}
+
 .products-cards-link {
   text-decoration: none;
 }
@@ -241,6 +247,10 @@ html {
 .products-price {
   line-height: normal;
   color: #444444;
+}
+
+.pagination-wrapper {
+  background-color: #f0f0f0;
 }
 
 .pagination-link {

@@ -105,6 +105,9 @@ html {
 /* title */
 
 .title {
+  margin: 0;
+  padding: 0;
+
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-size: 50px;
@@ -153,13 +156,19 @@ html {
 }
 
 .index-menu {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+
+  list-style-type: none;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 
   list-style-type: none;
 }
@@ -191,6 +200,31 @@ html {
 .feature-title {
   font-size: 36px;
   color: #000000;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.slider-item {
+  display: flex;
+}
+
+.img-wrapper {
+  width: 560px;
+}
+
+.slider-description {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+}
+
+.slider-feature {
+  list-style-type: none;
 }
 
 .categories-link {

@@ -61,10 +61,6 @@ html {
   overflow: hidden;
 }
 
-.index-main {
-  flex-grow: 1;
-}
-
 /* button */
 
 .button {
@@ -140,7 +136,28 @@ html {
 /* header */
 
 .header-wrapper {
-  background-image: linear-gradient(to bottom, #ffffff 17.6%, #ffe17f 17.6%);
+  background-image: linear-gradient(to bottom, #ffffff 11.7%, #ffe17f 11.7%);
+}
+
+.index-logo {
+  display: inline-block;
+  margin-top: 20px;
+
+  line-height: 0;
+}
+
+.index-menu {
+  margin: 0;
+  padding: 0;
+}
+
+/* main */
+
+.index-main {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  flex-grow: 1;
 }
 
 /* slider */

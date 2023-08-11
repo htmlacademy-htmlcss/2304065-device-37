@@ -200,6 +200,7 @@ html {
 /* slider */
 
 .slider-wrapper {
+  width: 1160px;
   margin: 0 auto;
 }
 
@@ -352,6 +353,7 @@ html {
 
 .delivery-wrapper {
   width: 1160px;
+  margin: 0 auto;
 }
 
 .delivery-link {
@@ -368,11 +370,26 @@ html {
 
 /* information */
 
+.information {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 108px;
+}
+
+.about-us {
+  width: 520px;
+}
+
 .about-us-list {
   line-height: 20px;
   font-weight: 700;
   color: #000000;
   letter-spacing: -0.36px;
+}
+
+.contacts {
+  width: 520px;
 }
 
 .address-description {

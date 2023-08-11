@@ -116,6 +116,8 @@ html {
 }
 
 .delivery-title {
+  max-width: 910px;
+
   font-size: 20px;
   line-height: normal;
   letter-spacing: 4px;
@@ -348,10 +350,16 @@ html {
 
 /* delivery */
 
+.delivery-wrapper {
+  width: 1160px;
+}
+
 .delivery-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 1160px;
+  margin: 0 auto;
 
   text-decoration: none;
 

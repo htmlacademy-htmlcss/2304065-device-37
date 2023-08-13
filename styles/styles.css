@@ -131,6 +131,10 @@ html {
   font-weight: 700;
 }
 
+.about-us .title {
+  margin-bottom: 18px;
+}
+
 .filters-title,
 .sorting-title {
   font-size: 16px;
@@ -378,10 +382,25 @@ html {
 }
 
 .about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
   width: 520px;
 }
 
+.about-us-description {
+  margin: 0;
+}
+
 .about-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin: 0;
+  padding: 0;
+
   line-height: 20px;
   font-weight: 700;
   color: #000000;

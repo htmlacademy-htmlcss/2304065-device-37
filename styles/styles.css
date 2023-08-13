@@ -558,6 +558,11 @@ html {
 
 .index-footer,
 .catalog-footer {
+  display: grid;
+  grid-template-columns:repeat(6, 160px);
+  column-gap: 40px;
+  row-gap: 35px;
+  padding: 62px 141px 61px;
   background-color: #444444;
 }
 

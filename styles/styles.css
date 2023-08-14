@@ -558,19 +558,43 @@ html {
 
 .index-footer,
 .catalog-footer {
-  display: grid;
-  grid-template-columns:repeat(6, 160px);
-  column-gap: 40px;
-  row-gap: 35px;
+  display: flex;
   padding: 62px 141px 61px;
   background-color: #444444;
 }
 
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+.footer-logo {
+  margin: 0 0 35px;
+}
+
 .footer-adress-description {
+  margin: 0 0 71px;
+
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  margin: 75px auto 0;
+}
+
+.footer-navigation-list {
+  display: flex;
+  gap: 35px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer-navigation-link {
@@ -582,9 +606,22 @@ html {
   text-transform: uppercase;
 }
 
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 63px;
+  width: 175px;
+  margin: 75px 0 0 auto;
+}
+
 .footer-phone-link {
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.logo-link {
+  display: flex;
+  justify-content: flex-end;
 }

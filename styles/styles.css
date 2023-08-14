@@ -505,6 +505,15 @@ html {
   background-color: #ffffff;
 }
 
+.breadcrumbs {
+  display: flex;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 20px;
@@ -532,6 +541,8 @@ html {
 }
 
 .sorting {
+  display: flex;
+
   width: 760px;
 }
 

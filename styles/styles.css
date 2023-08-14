@@ -180,12 +180,12 @@ html {
 
 .form-search {
   display: flex;
-  width: 517px;
 }
 
 .index-menu-list {
   display: flex;
   list-style-type: none;
+  width: 523px;
   margin: 0;
   padding: 0;
 }
@@ -514,6 +514,10 @@ html {
 
 /* filters */
 
+.filters {
+  width: 260px;
+}
+
 .filters-legend {
   line-height: 20px;
   font-weight: 700;
@@ -525,6 +529,10 @@ html {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+}
+
+.sorting {
+  width: 760px;
 }
 
 .sorting-range {
@@ -539,6 +547,8 @@ html {
 /* products */
 
 .products {
+  width: 760px;
+
   background-color: #ffffff;
 }
 

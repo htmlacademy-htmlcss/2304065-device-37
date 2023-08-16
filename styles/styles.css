@@ -556,6 +556,9 @@ html {
 }
 
 .filters-legend {
+  margin-bottom: 20px;
+  padding: 14px 0 0;
+
   line-height: 20px;
   font-weight: 700;
   color: #000000;
@@ -564,6 +567,14 @@ html {
 
 .products-filters {
   margin: 0;
+  padding: 0;
+}
+
+.products-filters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin: 0 0 0 36px;
   padding: 0;
 }
 

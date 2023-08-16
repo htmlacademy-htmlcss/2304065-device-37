@@ -516,6 +516,9 @@ html {
 /* breadcrumbs */
 
 .catalog-main-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   padding: 35px 141px 34px 200px ;
 
   background-color: #ffffff;

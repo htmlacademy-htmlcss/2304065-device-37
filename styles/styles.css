@@ -167,7 +167,7 @@ html {
   margin: 0 auto;
   padding: 20px 60px;
 
-  background-image: linear-gradient(to bottom, #ffffff 18%, #ffe17f 18%);
+  background-image: linear-gradient(to bottom, #ffffff 20%, #ffe17f 20%);
 }
 
 .index-logo {
@@ -185,6 +185,21 @@ html {
 
 .form-search {
   display: flex;
+  align-items: center;
+}
+
+.input-search {
+  width: 343px;
+  padding-left: 48px;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+
+  border-radius: 50px 0px 0px 50px;
+  border: 2px solid #000;
 }
 
 .index-menu-list {

@@ -219,10 +219,12 @@ html {
 
 .index-menu-list {
   display: flex;
-  list-style-type: none;
+  align-items: center;
   width: 523px;
-  margin: 0;
+  margin: 0 0 0 53px;
   padding: 0;
+
+  list-style-type: none;
 }
 
 .index-menu-item:first-child {

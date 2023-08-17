@@ -80,11 +80,23 @@ html {
 }
 
 .button-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
+  padding: 10px;
+  margin-left: -2px;
+
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: none;
+
+  background-color: #ffe17f;
+  border-radius: 0 50px 50px 0;
+  border: 2px solid #000000;
 }
 
 .button-menu {
@@ -190,16 +202,19 @@ html {
 
 .input-search {
   width: 343px;
-  padding-left: 48px;
+  height: 40px;
+  padding: 0 0 0 48px;
 
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
 
+  background-color: #ffe17f;
   border-radius: 50px 0px 0px 50px;
-  border: 2px solid #000;
+  border: 2px solid #000000;
 }
 
 .index-menu-list {

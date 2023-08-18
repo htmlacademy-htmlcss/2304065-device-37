@@ -99,6 +99,28 @@ html {
   border: 2px solid #000000;
 }
 
+.button-search:hover:not(:disabled) {
+  background-color: #000000;
+
+  color: #ffffff;
+}
+
+.button-search:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid #af4fff;
+}
+
+.button-search:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #000000;
+}
+
+.button-search:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
 .button-menu {
   font-family: "Rubik", sans-serif;
   line-height: 30px;

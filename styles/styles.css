@@ -129,6 +129,19 @@ html {
   letter-spacing: normal;
 }
 
+.button-menu:hover {
+  opacity: 0.6;
+}
+
+.button-menu:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid #af4fff;
+}
+
+.button-menu:active {
+  opacity: 0.3;
+}
+
 .button-login {
   padding-left: 27px;
 

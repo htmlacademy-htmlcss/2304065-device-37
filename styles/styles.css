@@ -388,11 +388,23 @@ html {
 }
 
 .catalog-toogler {
+  position: relative;
+
   display: flex;
   align-items: center;
   width: 350px;
   min-height: 50px;
   margin-right: auto;
+}
+
+.catalog-toogler-list {
+  position: absolute;
+  top: 31px;
+  left: -60px;
+
+  width: 1160px;
+
+  background-image: linear-gradient(to bottom, transparent 10%, #ffe17f 10%);
 }
 
 .navigation-item {

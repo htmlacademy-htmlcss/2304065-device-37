@@ -136,6 +136,23 @@ html {
   background-position: 0 center;
 }
 
+.button-compare {
+  margin-right: 36px;
+  padding-left: 22px;
+
+  background-image: url("../images/compare.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.button-basket {
+  padding-left: 26px;
+
+  background-image: url("../images/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
 .button-primary.active {
   color: #ffe17f;
 }
@@ -255,14 +272,22 @@ html {
 .input-search:focus-visible {
   z-index: 1;
 
-  outline-offset: 2px;
   outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+  input-search:focus {
+    outline: 2px solid #af4fff;
+    outline-offset: 2px;
+  }
 }
 
 .input-search:active {
   color: #000000;
 
   outline: none;
+  outline-offset: 0;
 }
 
 .input-search:disabled {
@@ -271,6 +296,7 @@ html {
 
 .index-menu-list {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   width: 500px;
   margin: 0;
@@ -280,6 +306,11 @@ html {
 }
 
 .index-menu-item:first-child {
+  margin-right: auto;
+}
+
+
+/*.index-menu-item:first-child {
   display: flex;
   justify-content: space-between;
   width: 230px;
@@ -289,10 +320,11 @@ html {
 .index-menu-item:nth-child(2) {
   margin-right: 36px;
 }
+*/
 
 .basket {
   display: inline-block;
-  position: absolute;
+  position: relative;
   width: 21px;
   height: 21px;
 

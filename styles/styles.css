@@ -328,8 +328,24 @@ html {
   border: none;
 }
 
+.button-primary {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+
+  background-image: linear-gradient(to bottom, transparent 40%, #ffe17f 40%, #ffe17f 60%, transparent 40%);
+}
+
+.slider-description .button-primary {
+  width: 220px;
+}
+
+.button-primary:hover {
+  background-color: #ffe17f;
+}
+
 .button-primary.active {
-  color: #ffe17f;
+  background-image: linear-gradient(to bottom, transparent 40%, #ffe17f 40%, #ffe17f 60%, transparent 40%);
 }
 
 /* title */

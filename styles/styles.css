@@ -185,6 +185,7 @@ html {
   top: 50%;
   right: 24px;
   transform: translateY(-50%);
+  z-index: 2;
 
   width: 2px;
   height: 16px;
@@ -199,6 +200,7 @@ html {
   top: -50%;
   right: 0;
   transform: translateY(50%);
+  z-index: 3;
 
   width: 50px;
   height: 50px;
@@ -208,11 +210,11 @@ html {
   opacity: 0.3;
 }
 
-.catalog-toogler:hover .button-nav-toogler::before {
+.catalog-toogler .button-nav-toogler:hover::before {
   opacity: 1;
 }
 
-.catalog-toogler:hover .button-nav-toogler::after {
+.catalog-toogler .button-nav-toogler:hover::after {
   opacity: 1;
 }
 
@@ -245,6 +247,61 @@ html {
   height: 2px;
 
   background-color: #000000;
+}
+
+.catalog-toogler-link {
+  position: relative;
+
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-toogler-link.active::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #000000;
+}
+
+.slider-prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+
+  width: 20px;
+  height: 60px;
+
+  background-image: url("../images/index/slider-button.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.slider-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotate(180deg);
+
+  width: 20px;
+  height: 60px;
+
+  background-image: url("../images/index/slider-button.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
 }
 
 .button-primary.active {
@@ -468,12 +525,15 @@ html {
   top: 31px;
   left: -60px;
 
+
   margin: 0;
   padding: 33px 60px 27px;
   width: 1160px;
   min-height: 180px;
 
-  background-image: linear-gradient(to bottom, transparent 10%, #ffe17f 10%);
+  background-image: linear-gradient(to bottom, transparent 7%, #ffe17f 7%);
+
+  list-style-type: none;
 }
 
 .navigation-item {
@@ -500,6 +560,8 @@ html {
 .slider-wrapper {
   width: 1160px;
   margin: 0 auto;
+
+  background-image: linear-gradient(to bottom, #ffe17f 27%, #ffffff 27%);
 }
 
 .feature-title {
@@ -523,6 +585,8 @@ html {
 }
 
 .img-wrapper {
+  position: relative;
+
   width: 560px;
 }
 

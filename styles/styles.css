@@ -128,8 +128,12 @@ html {
   text-transform: none;
 }
 
-.button-menu-light {
-  opacity: 0.3;
+.button-login {
+  padding-left: 27px;
+
+  background-image: url("../images/personal-area.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
 }
 
 .button-primary.active {
@@ -279,7 +283,7 @@ html {
   display: flex;
   justify-content: space-between;
   width: 230px;
-  margin: 0 auto 0 53px;
+  margin: 0 auto 0 26px;
 }
 
 .index-menu-item:nth-child(2) {

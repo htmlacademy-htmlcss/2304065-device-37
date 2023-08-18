@@ -126,6 +126,7 @@ html {
   line-height: 30px;
   font-weight: 400;
   text-transform: none;
+  letter-spacing: normal;
 }
 
 .button-login {
@@ -234,6 +235,7 @@ html {
 .index-menu {
   display: flex;
   justify-content: space-between;
+  width: 1040px;
   margin: 0;
   padding: 0;
 }
@@ -296,17 +298,24 @@ html {
 
 .index-menu-list {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  width: 500px;
+  width: 471px;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
 }
 
+.index-menu-item {
+  position: relative;
+}
+
 .index-menu-item:first-child {
-  margin-right: auto;
+  margin-left: -27px;
+}
+
+.index-menu-item:nth-last-of-type(2) {
+  margin-left: auto;
 }
 
 
@@ -323,10 +332,20 @@ html {
 */
 
 .basket {
-  display: inline-block;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 21px;
   height: 21px;
+
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: normal;
 
   border-radius: 50%;
   background-color: #ffffff;

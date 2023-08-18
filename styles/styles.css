@@ -201,8 +201,6 @@ html {
 }
 
 .input-search {
-  position: relative;
-
   width: 343px;
   height: 40px;
   padding: 0 0 0 48px;
@@ -215,20 +213,11 @@ html {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #ffe17f;
-  border-radius: 50px 0px 0px 50px;
-  border: 2px solid #000000;
-}
-
-.input-search::before {
-  content: "";
-  position: absolute;
-
-  width: 16px;
-  height: 16px;
-
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left 16px center;
+  border-radius: 50px 0px 0px 50px;
+  border: 2px solid #000000;
 }
 
 .index-menu-list {

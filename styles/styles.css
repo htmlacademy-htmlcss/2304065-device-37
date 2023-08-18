@@ -201,6 +201,8 @@ html {
 }
 
 .input-search {
+  position: relative;
+
   width: 343px;
   height: 40px;
   padding: 0 0 0 48px;
@@ -210,14 +212,35 @@ html {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
 
-  background-color: #ffe17f;
+  background-color: transparent;
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: left 16px center;
   border-radius: 50px 0px 0px 50px;
   border: 2px solid #000000;
+}
+
+.input-search::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.input-search:focus-visible {
+  z-index: 1;
+
+  outline-offset: 2px;
+  outline: 2px solid #af4fff;
+}
+
+.input-search:active {
+  color: #000000;
+
+  outline: none;
+}
+
+.input-search:disabled {
+  opacity: 0.3;
 }
 
 .index-menu-list {

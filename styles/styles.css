@@ -171,7 +171,7 @@ html {
   position: relative;
 }
 
-.catalog-toogler .button-nav {
+.catalog-toogler .button-nav-toogler {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -179,7 +179,7 @@ html {
   min-height: 50px;
 }
 
-.catalog-toogler .button-nav::before {
+.catalog-toogler .button-nav-toogler::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -193,7 +193,7 @@ html {
   opacity: 0.3;
 }
 
-.catalog-toogler .button-nav::after {
+.catalog-toogler .button-nav-toogler::after {
   content: "";
   position: absolute;
   top: -50%;
@@ -208,15 +208,15 @@ html {
   opacity: 0.3;
 }
 
-.catalog-toogler:hover .button-nav::before {
+.catalog-toogler:hover .button-nav-toogler::before {
   opacity: 1;
 }
 
-.catalog-toogler:hover .button-nav::after {
+.catalog-toogler:hover .button-nav-toogler::after {
   opacity: 1;
 }
 
-.catalog-toogler .button-nav:focus-visible {
+.catalog-toogler .button-nav-toogler:focus-visible {
   outline-offset: 2px;
   outline: 2px solid #af4fff;
 }

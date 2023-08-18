@@ -272,6 +272,27 @@ html {
   background-color: #000000;
 }
 
+.slider-button {
+  cursor: pointer;
+}
+
+.slider-button:hover:not(:disabled) {
+  opacity: 0.6;
+}
+
+.slider-button:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.slider-button:active {
+  opacity: 0.3;
+}
+
+.slider-button:disabled {
+  opacity: 0.1;
+}
+
 .slider-prev {
   position: absolute;
   top: 211px;
@@ -439,13 +460,6 @@ html {
 
   outline: 2px solid #af4fff;
   outline-offset: 2px;
-}
-
-@supports not selector(:focus-visible) {
-  input-search:focus {
-    outline: 2px solid #af4fff;
-    outline-offset: 2px;
-  }
 }
 
 .input-search:active {

@@ -357,10 +357,12 @@ html {
   background-image: linear-gradient(to bottom, transparent 40%, #ffe17f 40%, #ffe17f 60%, transparent 40%);
 }
 
-.button-primary:disabled {
+.button-primary:disabled,
+.button-primary.disabled {
   opacity: 0.3;
 
   cursor: default;
+  pointer-events: none;
 }
 
 /* title */
@@ -722,6 +724,8 @@ html {
 
 .slider-pagination-link.active {
   background-color: #000000;
+
+  pointer-events: none;
 }
 
 /* categories */

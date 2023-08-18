@@ -234,7 +234,7 @@ html {
   gap: 30px;
   width: 1160px;
   margin: 0 auto;
-  padding: 20px 60px;
+  padding: 20px 60px 0;
 
   background-image: linear-gradient(to bottom, #ffffff 20%, #ffe17f 20%);
 }
@@ -388,11 +388,16 @@ html {
 }
 
 .catalog-toogler {
+  display: flex;
+  align-items: center;
   width: 350px;
+  min-height: 50px;
   margin-right: auto;
 }
 
 .navigation-item {
+  display: flex;
+  align-items: center;
   width: 127px;
 }
 

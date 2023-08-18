@@ -340,12 +340,27 @@ html {
   width: 220px;
 }
 
-.button-primary:hover {
+.button-primary:hover:not(:disabled) {
   background-color: #ffe17f;
+}
+
+.button-primary:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.button-primary:active {
+  background-color: #ffcc33;
+  background-image: linear-gradient(to bottom, #ffcc33 0%, #ffcc33 100%);
 }
 
 .button-primary.active {
   background-image: linear-gradient(to bottom, transparent 40%, #ffe17f 40%, #ffe17f 60%, transparent 40%);
+}
+
+.button-primary:disabled {
+  opacity: 0.3;
+
+  cursor: default;
 }
 
 /* title */

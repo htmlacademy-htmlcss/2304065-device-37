@@ -169,9 +169,13 @@ html {
 
 .button-nav {
   position: relative;
+  z-index: 4;
 }
 
 .catalog-toogler .button-nav-toogler {
+  position: relative;
+  z-index: 4;
+
   display: flex;
   justify-content: flex-start;
   align-items: center;

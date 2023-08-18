@@ -167,6 +167,69 @@ html {
   background-position: 0 center;
 }
 
+.catalog-toogler .button-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 293px;
+  min-height: 50px;
+}
+
+.catalog-toogler .button-nav::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+
+  width: 2px;
+  height: 16px;
+
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+.catalog-toogler .button-nav::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: 0;
+  transform: translateY(50%);
+
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../images/catalogue-close.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.catalog-toogler:hover .button-nav::before {
+  opacity: 1;
+}
+
+.catalog-toogler:hover .button-nav::after {
+  opacity: 1;
+}
+
+.catalog-toogler .button-nav:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid #af4fff;
+}
+
+.button-nav:hover {
+  opacity: 0.6;
+}
+
+.button-nav:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid #af4fff;
+}
+
+.button-nav:active {
+  opacity: 0.3;
+}
+
 .button-primary.active {
   color: #ffe17f;
 }
@@ -346,18 +409,6 @@ html {
 }
 
 
-/*.index-menu-item:first-child {
-  display: flex;
-  justify-content: space-between;
-  width: 230px;
-  margin: 0 auto 0 26px;
-}
-
-.index-menu-item:nth-child(2) {
-  margin-right: 36px;
-}
-*/
-
 .basket {
   position: absolute;
   top: 50%;
@@ -392,8 +443,6 @@ html {
 
   display: flex;
   align-items: center;
-  width: 350px;
-  min-height: 50px;
   margin-right: auto;
 }
 
@@ -402,7 +451,10 @@ html {
   top: 31px;
   left: -60px;
 
+  margin: 0;
+  padding: 33px 60px 27px;
   width: 1160px;
+  min-height: 180px;
 
   background-image: linear-gradient(to bottom, transparent 10%, #ffe17f 10%);
 }

@@ -201,6 +201,8 @@ html {
 }
 
 .input-search {
+  position: relative;
+
   width: 343px;
   height: 40px;
   padding: 0 0 0 48px;
@@ -217,11 +219,23 @@ html {
   border: 2px solid #000000;
 }
 
+.input-search::before {
+  content: "";
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .index-menu-list {
   display: flex;
   align-items: center;
-  width: 523px;
-  margin: 0 0 0 53px;
+  width: 500px;
+  margin: 0;
   padding: 0;
 
   list-style-type: none;
@@ -231,11 +245,21 @@ html {
   display: flex;
   justify-content: space-between;
   width: 230px;
-  margin-right: auto;
+  margin: 0 auto 0 53px;
 }
 
 .index-menu-item:nth-child(2) {
   margin-right: 36px;
+}
+
+.basket {
+  display: inline-block;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .navigation-list {

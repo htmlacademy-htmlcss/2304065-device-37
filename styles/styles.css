@@ -167,6 +167,10 @@ html {
   background-position: 0 center;
 }
 
+.button-nav {
+  position: relative;
+}
+
 .catalog-toogler .button-nav {
   display: flex;
   justify-content: flex-start;
@@ -228,6 +232,19 @@ html {
 
 .button-nav:active {
   opacity: 0.3;
+}
+
+.button-nav.active::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #000000;
 }
 
 .button-primary.active {

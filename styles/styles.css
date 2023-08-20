@@ -76,6 +76,8 @@ html {
   text-decoration: none;
   text-transform: uppercase;
 
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
@@ -363,6 +365,17 @@ html {
 
   cursor: default;
   pointer-events: none;
+}
+
+.tabs-control .button {
+  width: 160px;
+  height: 40px;
+}
+
+.tabs-control .button.active {
+  color: #ffe17f;
+
+  background-color: #000000;
 }
 
 /* title */
@@ -828,10 +841,13 @@ html {
 }
 
 .services-wrapper {
+  position: relative;
+
   display: flex;
   gap: 123px;
   width: 1160px;
   margin: 0 auto;
+  padding: 64px 0;
 }
 
 .tabs-control {
@@ -844,8 +860,25 @@ html {
   list-style-type: none;
 }
 
+.services-wrapper::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 280px;
+
+  width: 7px;
+  height: 100%;
+
+  background-color: #000000;
+}
+
 .tabs-control-item {
   width: 280px;
+}
+
+.tabs-control-item:nth-child(1) {
+  background-color: #000000;
 }
 
 .tabs-content {

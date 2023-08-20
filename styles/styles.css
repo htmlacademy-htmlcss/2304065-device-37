@@ -383,6 +383,14 @@ html {
   transition: transform 0.4s ease-in-out;
 }
 
+.tabs-control .button.active:focus-visible {
+  transform: translateX(35px);
+  transition: transform 0.4s ease-in-out;
+
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 /* title */
 
 .title {

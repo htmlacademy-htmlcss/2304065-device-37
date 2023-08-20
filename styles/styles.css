@@ -393,6 +393,11 @@ html {
   outline-offset: 2px;
 }
 
+.about-us .button {
+  width: 270px;
+  height: 40px;
+}
+
 /* title */
 
 .title {
@@ -1114,11 +1119,28 @@ html {
 .contacts-list {
   margin: 0;
   padding: 0;
+
+  list-style-type: none;
 }
 
 .phone-link {
   font-style: normal;
   color: #444444;
+}
+
+.phone-link:hover {
+  opacity: 0.6;
+
+  transition: 0.15s ease-in-out;
+}
+
+.phone-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.phone-link:active {
+  opacity: 0.3;
 }
 
 /* subscribe */

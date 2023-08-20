@@ -837,7 +837,7 @@ html {
 /* services */
 
 .services {
-  background-image: linear-gradient(to bottom, #ffffff 26%, #f0f0f0 26%);
+  background-image: linear-gradient(to bottom, #ffffff 30%, #f0f0f0 30%);
 }
 
 .services-wrapper {

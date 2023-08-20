@@ -403,6 +403,12 @@ html {
   height: 40px;
 }
 
+.button-tertiary {
+  padding: 15px 35px;
+
+  border: 3px solid #C4C4C4;
+}
+
 /* title */
 
 .title {
@@ -1186,6 +1192,7 @@ html {
   display: flex;
   align-items: center;
   width: 558px;
+  min-height: 57px;
   padding: 0 0 0 16px;
 
   color: rgba(133, 133, 133, 0.5);
@@ -1198,6 +1205,7 @@ html {
 .subscribe-form-description {
   position: relative;
 
+  align-self: center;
   grid-column: 6/-1;
   align-content: end;
   margin: 0;

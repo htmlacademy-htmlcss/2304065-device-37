@@ -1172,8 +1172,27 @@ html {
 }
 
 .subscribe-form {
+  display: flex;
   grid-column: 1/6;
   width: 810px;
+  padding: 0;
+}
+
+.field-email {
+  font-family: "Rubik";
+  font-size: 18px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+  width: 558px;
+  padding: 0 0 0 16px;
+
+  color: rgba(133, 133, 133, 0.5);
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #c4c4c4;
 }
 
 .subscribe-form-description {

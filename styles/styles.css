@@ -487,7 +487,7 @@ html {
   gap: 30px;
   width: 1160px;
   margin: 0 auto;
-  padding: 20px 60px 0;
+  padding: 20px 60px;
 
   background-image: linear-gradient(to bottom, #ffffff 20%, #ffe17f 20%);
 }
@@ -667,7 +667,7 @@ html {
 /* slider */
 
 .index-slider {
-  margin-top: -18px;
+  margin-top: -38px;
 }
 
 .slider-wrapper {

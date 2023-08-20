@@ -722,10 +722,21 @@ html {
   border-radius: 50%;
 }
 
+.slider-pagination-link:hover {
+  opacity: 0.6;
+}
+
+.slider-pagination-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.slider-pagination-link:active {
+  opacity: 0.3;
+}
+
 .slider-pagination-link.active {
   background-color: #000000;
-
-  pointer-events: none;
 }
 
 /* categories */

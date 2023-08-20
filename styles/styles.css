@@ -850,7 +850,9 @@ html {
 /* services */
 
 .services {
-  background-image: linear-gradient(to bottom, #ffffff 30%, #f0f0f0 30%);
+  padding-bottom: 72px;
+
+  background-image: linear-gradient(to bottom, #ffffff 24%, #f0f0f0 24%);
 }
 
 .services-wrapper {
@@ -964,15 +966,45 @@ html {
 }
 
 .delivery-link {
+  letter-spacing: -4px;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 1160px;
-  margin: 0 auto;
 
   text-decoration: none;
 
   background-color: #f0f0f0;
+}
+
+.delivery-link::before {
+  content: "";
+
+  position: relative;
+
+  width: 125px;
+  height: 100px;
+
+  background-color: #ffe17f;
+  background-image: url("../images/index/delivery-service.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.delivery-link::after {
+  content: "";
+
+  position: relative;
+
+  width: 125px;
+  height: 100px;
+
+  background-image: url("../images/index/information.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.5;
 }
 
 /* information */

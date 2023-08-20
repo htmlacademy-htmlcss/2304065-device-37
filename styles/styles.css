@@ -757,6 +757,19 @@ html {
   width: 160px;
 }
 
+.categories-link:hover::before {
+  background-color: #ffc700;
+}
+
+.categories-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.categories-link:active {
+  opacity: 0.3;
+}
+
 .categories-link::before {
   content: "";
 

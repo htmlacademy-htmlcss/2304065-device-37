@@ -1029,8 +1029,6 @@ html {
 }
 
 .catalog-wrapper {
-  /*display: flex;
-  flex-wrap: wrap;*/
   display: grid;
   grid-template-columns:repeat(6, 160px);
   column-gap: 40px;

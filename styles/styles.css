@@ -1177,9 +1177,27 @@ html {
 }
 
 .subscribe-form-description {
+  position: relative;
+
   grid-column: 6/-1;
   align-content: end;
   margin: 0;
+}
+
+.subscribe-form-description::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -32px;
+  transform: translateY(-50%);
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../images/index/checkmark-big.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* catalog */

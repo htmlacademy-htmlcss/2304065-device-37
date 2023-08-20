@@ -378,6 +378,11 @@ html {
   background-color: #000000;
 }
 
+.tabs-control .button.active:hover {
+  transform: translateX(35px);
+  transition: transform 0.4s ease-in-out;
+}
+
 /* title */
 
 .title {

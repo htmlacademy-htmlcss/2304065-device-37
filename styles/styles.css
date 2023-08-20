@@ -343,6 +343,8 @@ html {
 }
 
 .button-primary:hover:not(:disabled) {
+  transition: 0.1s ease-in-out;
+
   background-color: #ffe17f;
 }
 
@@ -784,7 +786,7 @@ html {
 }
 
 .categories-link:hover::before {
-  transition: 0.2s ease-in-out;
+  transition: 0.15s ease-in-out;
 
   background-color: #ffc700;
 }
@@ -1011,12 +1013,12 @@ html {
 
 .delivery-link:hover::before {
   background-color: #ffc700;
-  transition: 0.2s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 
 .delivery-link:hover::after {
   opacity: 1;
-  transition: 0.2s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 
 .delivery-link:focus-visible {

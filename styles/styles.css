@@ -425,7 +425,22 @@ html {
 
 .about-us .title,
 .contacts .title {
+  position: relative;
+
   margin: 47px 0 18px;
+}
+
+.about-us .title::before,
+.contacts .title::before {
+  content: "";
+
+  position: absolute;
+  top: -47px;
+
+  width: 84px;
+  height: 7px;
+
+  background-color: #000000;
 }
 
 .contacts-title {

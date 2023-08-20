@@ -1078,6 +1078,23 @@ html {
   font-weight: 700;
   color: #000000;
   letter-spacing: -0.36px;
+
+  list-style-type: none;
+}
+
+.about-us-item::before {
+  content: "";
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 26px 0 3px;
+
+  background-color: #ffc700;
+  border-radius: 50%;
 }
 
 .contacts {

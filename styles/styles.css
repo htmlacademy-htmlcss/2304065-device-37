@@ -854,11 +854,55 @@ html {
 }
 
 .tabs-content-item {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 34px;
   width: 694px;
+}
+
+.tabs-content-item:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  width: 136px;
+  height: 164px;
+
+  background-image: url("../images/index/delivery.svg");
+  background-repeat: no-repeat;
+}
+
+.tabs-content-item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  width: 171px;
+  height: 195px;
+
+  background-image: url("../images/index/guarantee.svg");
+  background-repeat: no-repeat;
+}
+
+.tabs-content-item:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  width: 156px;
+  height: 188px;
+
+  background-image: url("../images/index/credit.svg");
+  background-repeat: no-repeat;
 }
 
 .tabs-content-description {

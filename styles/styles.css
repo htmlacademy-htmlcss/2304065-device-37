@@ -275,6 +275,23 @@ html {
   text-decoration: none;
 }
 
+.catalog-toogler-link:hover {
+  opacity: 0.6;
+
+  transition: 0.1s ease-in-out;
+}
+
+.catalog-toogler-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.catalog-toogler-link:active {
+  opacity: 0.3;
+
+  transition: 0.1s ease-in-out;
+}
+
 .catalog-toogler-link.active::before {
   content: "";
   position: absolute;

@@ -1598,6 +1598,29 @@ html {
   opacity: 0.3;
 }
 
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 450px;
+
+  background-color: #ff3d3d;
+
+  list-style-type: none;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffc700;
+  border-radius: 50%;
+}
+
 .logo-link {
   display: flex;
   justify-content: flex-end;

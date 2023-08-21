@@ -152,6 +152,12 @@ html {
   background-position: 0 center;
 }
 
+.button-exit {
+  margin-left: 28px;
+
+  opacity: 0.3;
+}
+
 .button-compare {
   margin-right: 36px;
   padding-left: 22px;
@@ -1390,7 +1396,9 @@ html {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 35px 141px 34px 200px ;
+  margin: 0 auto;
+  padding: 35px 60px 34px;
+  width: 1160px;
 
   background-color: #ffffff;
 }

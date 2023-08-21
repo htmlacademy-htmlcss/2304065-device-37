@@ -1513,8 +1513,8 @@ html {
 }
 
 .footer-logo:focus-visible {
-  outline-offset: 2px;
   outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .footer-logo:active {
@@ -1554,6 +1554,22 @@ html {
   text-transform: uppercase;
 }
 
+.footer-navigation-link:hover {
+  color: #ffc700;
+
+  text-decoration: underline 2px;
+  text-underline-offset: 9px;
+}
+
+.footer-navigation-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.footer-navigation-link:active {
+  opacity: 0.3;
+}
+
 .footer-contacts {
   display: flex;
   flex-direction: column;
@@ -1567,6 +1583,19 @@ html {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.footer-phone-link:hover {
+  color: #ffc700;
+}
+
+.footer-phone-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.footer-phone-link:active {
+  opacity: 0.3;
 }
 
 .logo-link {

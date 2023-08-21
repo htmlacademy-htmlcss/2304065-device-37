@@ -1654,3 +1654,20 @@ html {
   display: flex;
   justify-content: flex-end;
 }
+
+.logo-link:hover path {
+  fill: #ffffff;
+}
+
+.logo-link:focus-visible {
+  outline: none;
+}
+
+.logo-link:focus-visible svg {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.logo-link:active {
+  opacity: 0.3;
+}

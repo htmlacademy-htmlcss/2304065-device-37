@@ -218,10 +218,14 @@ html {
 
 .catalog-toogler .button-nav-toogler:hover::before {
   opacity: 1;
+
+  transition: 0.1s ease-in-out;
 }
 
 .catalog-toogler .button-nav-toogler:hover::after {
   opacity: 1;
+
+  transition: 0.1s ease-in-out;
 }
 
 .catalog-toogler .button-nav-toogler:focus-visible {
@@ -231,6 +235,8 @@ html {
 
 .button-nav:hover {
   opacity: 0.6;
+
+  transition: 0.1s ease-in-out;
 }
 
 .button-nav:focus-visible {
@@ -240,6 +246,8 @@ html {
 
 .button-nav:active {
   opacity: 0.3;
+
+  transition: 0.1s ease-in-out;
 }
 
 .button-nav.active::before {
@@ -253,6 +261,8 @@ html {
   height: 2px;
 
   background-color: #000000;
+
+  transition: 0.1s ease-in-out;
 }
 
 .catalog-toogler-link {
@@ -718,9 +728,68 @@ html {
 }
 
 .slider-item {
+  position: relative;
+
   display: flex;
   gap: 40px;
   width: 1160px;
+}
+
+.slider-item:nth-child(1)::before {
+  content: "01";
+
+  position: absolute;
+  top: 86px;
+  right: 49px;
+
+  width: 250px;
+  height: 135px;
+
+  font-style: normal;
+  font-size: 180px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: right;
+
+  color: #ffffff;
+}
+
+.slider-item:nth-child(2)::before {
+  content: "02";
+
+  position: absolute;
+  top: 86px;
+  right: 49px;
+
+  width: 250px;
+  height: 135px;
+
+  font-style: normal;
+  font-size: 180px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: right;
+
+  color: #ffffff;
+}
+
+.slider-item:nth-child(3)::before {
+  content: "03";
+
+  position: absolute;
+  top: 86px;
+  right: 49px;
+
+  width: 250px;
+  height: 135px;
+
+  font-style: normal;
+  font-size: 180px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: right;
+
+  color: #ffffff;
 }
 
 .img-wrapper {
@@ -744,6 +813,8 @@ html {
 }
 
 .slider-description .title {
+  z-index: 2;
+
   margin-bottom: 29px;
 }
 

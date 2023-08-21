@@ -1510,6 +1510,8 @@ html {
 
 .footer-logo:hover {
   opacity: 0.6;
+
+  transition: 0.15s ease-in-out;
 }
 
 .footer-logo:focus-visible {
@@ -1519,6 +1521,8 @@ html {
 
 .footer-logo:active {
   opacity: 0.3;
+
+  transition: 0.15s ease-in-out;
 }
 
 .footer-adress-description {
@@ -1559,6 +1563,8 @@ html {
 
   text-decoration: underline 2px;
   text-underline-offset: 9px;
+
+  transition: 0.15s ease-in-out;
 }
 
 .footer-navigation-link:focus-visible {
@@ -1568,6 +1574,8 @@ html {
 
 .footer-navigation-link:active {
   opacity: 0.3;
+
+  transition: 0.15s ease-in-out;
 }
 
 .footer-contacts {
@@ -1587,6 +1595,8 @@ html {
 
 .footer-phone-link:hover {
   color: #ffc700;
+
+  transition: 0.15s ease-in-out;
 }
 
 .footer-phone-link:focus-visible {
@@ -1596,6 +1606,8 @@ html {
 
 .footer-phone-link:active {
   opacity: 0.3;
+
+  transition: 0.15s ease-in-out;
 }
 
 .footer-social-list {
@@ -1606,8 +1618,6 @@ html {
   padding: 0;
   width: 450px;
 
-  background-color: #ff3d3d;
-
   list-style-type: none;
 }
 
@@ -1617,8 +1627,27 @@ html {
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #ffc700;
+
+  background-color: rgba(255, 255, 255, 0.30);
+
   border-radius: 50%;
+}
+
+.footer-social-link:hover {
+  background-color: #ffc700;
+
+  transition: 0.15s ease-in-out;
+}
+
+.footer-social-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.footer-social-link:active path {
+  opacity: 0.3;
+
+  transition: 0.15s ease-in-out;
 }
 
 .logo-link {

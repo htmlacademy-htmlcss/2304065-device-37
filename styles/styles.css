@@ -1504,6 +1504,21 @@ html {
 
 .footer-logo {
   margin: 0 0 35px;
+  width: 145px;
+  height: 36px;
+}
+
+.footer-logo:hover {
+  opacity: 0.6;
+}
+
+.footer-logo:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid #af4fff;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
 }
 
 .footer-adress-description {

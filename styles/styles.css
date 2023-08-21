@@ -1588,6 +1588,8 @@ html {
 }
 
 .footer-wrapper {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   width: 1160px;
@@ -1624,12 +1626,27 @@ html {
 }
 
 .footer-adress-description {
+  position: relative;
+
   margin: 0 0 71px;
 
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.footer-wrapper::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+
+  position: absolute;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #ffc700;
 }
 
 .footer-navigation {

@@ -1195,11 +1195,31 @@ html {
   min-height: 57px;
   padding: 0 0 0 16px;
 
-  color: rgba(133, 133, 133, 0.5);
-
   background-color: transparent;
   border: none;
   border-bottom: 3px solid #c4c4c4;
+}
+
+.field-email::placeholder {
+  opacity: 0.5;
+}
+
+.field-email:hover:not(:disabled) {
+  background-color: #dcdcdc;
+}
+
+.field-email:focus-visible {
+  background-color: #dcdcdc;
+
+  outline: none;
+}
+
+.field-email:invalid {
+  border-bottom: 3px solid #ff3d3d;
+}
+
+.field-email:disabled {
+  opacity: 0.3;
 }
 
 .subscribe-form-description {

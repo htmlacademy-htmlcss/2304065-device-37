@@ -672,9 +672,9 @@ html {
   z-index: 3;
 
   display: grid;
-  grid-template-columns: 222px 211px 211px;
+  grid-template-columns: 222px 182px 182px;
   grid-template-rows: repeat(3, 36px);
-  column-gap: 30px 1px;
+  column-gap: 30px;
   margin: 0;
   padding: 33px 60px 27px;
   width: 1160px;

@@ -409,6 +409,30 @@ html {
   border: 3px solid #C4C4C4;
 }
 
+.button-tertiary:hover:not(:disabled) {
+  transition: 0.1s ease-in-out;
+
+  color: #ffffff;
+
+  background-color: #000000;
+  border: 3px solid #000000;
+}
+
+.button-tertiary:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.button-tertiary:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-tertiary:disabled {
+  opacity: 0.3;
+
+  cursor: default;
+}
+
 /* title */
 
 .title {

@@ -1904,6 +1904,38 @@ html {
   text-decoration: none;
 }
 
+.products-cards-link-new {
+  position: relative;
+}
+
+.products-cards-link-new::before {
+  content: "New";
+
+  position: absolute;
+  top: 27px;
+  right: 27px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 800;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #000000;
+
+  border: 2px solid #000000;
+  border-radius: 50%;
+
+  opacity: 0.6;
+}
+
 .products-cards-link figure {
   margin: 0;
   padding: 0;

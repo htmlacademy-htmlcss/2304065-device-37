@@ -1693,7 +1693,8 @@ html {
   list-style-type: none;
 }
 
-.color {
+.color,
+.bluetooth {
   position: relative;
 
   display: block;
@@ -1714,27 +1715,52 @@ html {
   border-radius: 3px;
 }
 
-.color:hover {
+.products-radio {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  left: 0;
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #cccccc;
+  border-radius: 50%;
+}
+
+.color:hover,
+.bluetooth:hover {
+  transition: 0.05s ease-in-out;
+
   opacity: 0.6;
 }
 
-.input-checkbox[type="checkbox"]:focus-visible + .products-checkbox {
+.input-checkbox[type="checkbox"]:focus-visible + .products-checkbox,
+.input-radio[type="radio"]:focus-visible + .products-radio {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
+.color:active,
+.bluetooth:active {
+  transition: 0.05s ease-in-out;
 
-.color:active {
   opacity: 0.3;
 }
 
-.color:disabled {
+.color:disabled,
+.bluetooth:disabled {
   opacity: 0.1;
 }
 
 .input-checkbox[type="checkbox"]:checked + .products-checkbox {
   border: 2px solid #000000;
   border-radius: 3px;
+}
+
+.input-radio[type="radio"]:checked + .products-radio {
+  border: 2px solid #000000;
+  border-radius: 50%;
 }
 
 .input-checkbox[type="checkbox"]:checked + .products-checkbox::before,
@@ -1745,6 +1771,7 @@ html {
   top: 50%;
   left: 3px;
   transform: translateY(-50%);
+  transition: 0.05s ease-in-out;
 
   width: 10px;
   height: 10px;
@@ -1752,6 +1779,23 @@ html {
   background-image: url("..//images/catalog/checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.input-radio[type="radio"]:checked + .products-radio::before,
+.input-radio[type="radio"]:checked + .products-radio::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  transition: 0.05s ease-in-out;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: #000000;
+  border-radius: 50%;
 }
 
 .products-filters-description {

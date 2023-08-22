@@ -101,6 +101,24 @@
             <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="products-filters">
                 <legend class="filters-legend">Стоимость</legend>
+                <div class="range-wrapper">
+                  <div class="range-bar">
+                    <button class="range-price-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-price-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                  <div class="range-input">
+                    <label class="range-input-label">
+                      от <input class="range-input" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="range-input-label">
+                      до <input class="range-input" type="number" value="5000" name="max-price">
+                    </label>
+                  </div>
+                </div>
                 <!--Здесь будет ползунок-->
               </fieldset>
               <fieldset class="products-filters">

@@ -1730,7 +1730,7 @@ html {
 
 .color:hover,
 .bluetooth:hover {
-  transition: 0.05s ease-in-out;
+  transition: 0.15s ease-in-out;
 
   opacity: 0.6;
 }
@@ -1743,7 +1743,7 @@ html {
 
 .color:active,
 .bluetooth:active {
-  transition: 0.05s ease-in-out;
+  transition: 0.15s ease-in-out;
 
   opacity: 0.3;
 }
@@ -1754,11 +1754,15 @@ html {
 }
 
 .input-checkbox[type="checkbox"]:checked + .products-checkbox {
+  transition: 0.15s ease-in-out;
+
   border: 2px solid #000000;
   border-radius: 3px;
 }
 
 .input-radio[type="radio"]:checked + .products-radio {
+  transition: 0.15s ease-in-out;
+
   border: 2px solid #000000;
   border-radius: 50%;
 }

@@ -1689,6 +1689,8 @@ html {
   gap: 17px;
   margin: 0;
   padding: 0;
+
+  list-style-type: none;
 }
 
 .color {
@@ -1705,11 +1707,51 @@ html {
   transform: translateY(-50%);
 
   left: 0;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+}
+
+.color:hover {
+  opacity: 0.6;
+}
+
+.input-checkbox[type="checkbox"]:focus-visible + .products-checkbox {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+
+.color:active {
+  opacity: 0.3;
+}
+
+.color:disabled {
+  opacity: 0.1;
+}
+
+.input-checkbox[type="checkbox"]:checked + .products-checkbox {
   border: 2px solid #000000;
   border-radius: 3px;
+}
+
+.input-checkbox[type="checkbox"]:checked + .products-checkbox::before,
+.input-checkbox[type="checkbox"]:checked + .products-checkbox::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+
+  width: 10px;
+  height: 10px;
+
+  background-image: url("..//images/catalog/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .products-filters-description {

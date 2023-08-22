@@ -468,6 +468,71 @@ html {
   cursor: default;
 }
 
+.button-wrapper-item {
+  position: relative;
+}
+
+.button-ascending,
+.button-descending {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.button-ascending::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../images/catalog/sort-up.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.2;
+}
+
+.button-descending::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+
+  transform: rotate(180deg);
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../images/catalog/sort-up.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.2;
+}
+
+.button-ascending:hover::before,
+.button-descending:hover::before {
+  transition: 0.05s ease-in-out;
+
+  opacity: 0.5;
+}
+
+.button-ascending:focus-visible,
+.button-descending:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.button-ascending:active::before,
+.button-descending:active::before {
+  transition: 0.05s ease-in-out;
+
+  opacity: 1;
+}
+
 /* title */
 
 .title {
@@ -1505,7 +1570,7 @@ html {
   margin-left: -80px;
   padding: 20px 40px;
 
-  width: 760px;
+  width: 840px;
   height: 110px;
 }
 

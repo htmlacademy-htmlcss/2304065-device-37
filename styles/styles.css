@@ -1458,6 +1458,65 @@ html {
   margin: 0 auto;
 }
 
+.range-scale {
+  position: relative;
+
+  height: 2px;
+  margin-bottom: 11px;
+
+  background-color: #dcdcdc;
+}
+
+.range-bar {
+  position: absolute;
+
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.button-range {
+  position: absolute;
+
+  width: 18px;
+  height: 18px;
+
+  background-color: #ebebeb;
+  border: 2px solid #000000;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.range-price-min {
+  top: -9px;
+  left: -9px;
+}
+
+.range-price-max {
+  top: -9px;
+  left: 110px;
+}
+
+.button-range:hover {
+  transition: 0.05s ease-in-out;
+
+  background-color: #f5f5f5;
+  border: 2px solid #808080;
+}
+
+.button-range:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.button-range:active {
+  transition: 0.05s ease-in-out;
+
+  background-color: #000000;
+  border: 2px solid #000000;
+}
+
 /* breadcrumbs */
 
 .catalog-main-header {

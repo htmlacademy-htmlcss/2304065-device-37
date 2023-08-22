@@ -1904,6 +1904,10 @@ html {
   text-decoration: none;
 }
 
+.products-cards-link:hover {
+  opacity: 0.8;
+}
+
 .products-cards-link-new {
   position: relative;
 }
@@ -1939,6 +1943,10 @@ html {
 .products-cards-link figure {
   margin: 0;
   padding: 0;
+}
+
+.products-cards-img {
+  margin-bottom: 32px;
 }
 
 .products-description {

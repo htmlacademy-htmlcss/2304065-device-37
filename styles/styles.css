@@ -1519,6 +1519,34 @@ html {
   line-height: 30px;
   font-weight: 400;
   color: #000000;
+
+  background-color: transparent;
+  background-image: url(../images/catalog/sorting-range.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  border: none;
+  appearance: none;
+}
+
+.sorting-range:hover:not(:disabled) {
+  opacity: 0.6;
+
+  transition: 0.15s ease-in-out;
+}
+
+.sorting-range:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.sorting-range:active {
+  opacity: 0.3;
+
+  transition: 0.15s ease-in-out;
+}
+
+.sorting-range:disabled {
+  opacity: 0.1;
 }
 
 .button-wrapper-list {

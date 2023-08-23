@@ -113,12 +113,10 @@
                     </div>
                   </div>
                   <div class="range-input">
-                    <label class="range-input-label range-input-label-min">
-                      от <input class="range-input range-input-min" type="text" value="0" name="min-price">
-                    </label>
-                    <label class="range-input-label range-input-label-max">
-                      до <input class="range-input range-input-max" type="number" value="5000" name="max-price">
-                    </label>
+                    <label class="visually-hidden" for="price-min">Установить минимальную цену.</label>
+                    <input class="range-input-label range-input-min" id="price-min" type="number" placeholder="от 0" name="min-price">
+                    <label class="visually-hidden" for="price-max">Установить максимальную цену.</label>
+                    <input class="range-input-label range-input-max" id="price-max" type="number" placeholder="до 5000" name="max-price">
                   </div>
                 </div>
               </fieldset>

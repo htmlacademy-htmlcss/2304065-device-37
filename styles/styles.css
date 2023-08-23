@@ -2055,7 +2055,7 @@ html {
   display: block;
 }
 
-.products-cards-link-hover::before {
+.products-cards-link:hover .products-cards-link-hover::before {
   content: "Подробнее";
 
   position: absolute;
@@ -2088,6 +2088,41 @@ html {
 
 .products-cards-link:hover .products-description-wrapper {
   opacity: 0.6;
+}
+
+.products-cards-link:active .products-description-wrapper {
+  opacity: 0.3;
+}
+
+.products-cards-link:active .products-cards-link-hover::before {
+  content: "Подробнее";
+
+  position: absolute;
+
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 800;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 3.6px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-image: linear-gradient(to bottom, transparent 40%, #ffcc33 40%, #ffcc33 60%, transparent 60%);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .pagination-list {

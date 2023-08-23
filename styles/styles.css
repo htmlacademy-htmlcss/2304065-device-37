@@ -1666,6 +1666,11 @@ html {
   gap: 47px;
 }
 
+.filters-form .button {
+  position: relative;
+  top: -12px
+}
+
 .filters-legend {
   position: relative;
 

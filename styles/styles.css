@@ -565,6 +565,29 @@ html {
   padding: 25px;
 }
 
+.button-pagination:hover {
+  transition: 0.05s ease-in-out;
+
+  background-color: #dcdcdc;
+}
+
+.button-pagination:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.button-pagination:active {
+  color: #b3b3b3;
+
+  background-color: #dcdcdc;
+}
+
+.button-pagination-disabled {
+  color: #c7c7c7;
+
+  pointer-events: none;
+}
+
 /* title */
 
 .title {

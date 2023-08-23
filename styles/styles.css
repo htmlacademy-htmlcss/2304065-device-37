@@ -1953,14 +1953,17 @@ html {
 }
 
 .products-cards-link {
+  position: relative;
+
   display: block;
   width: 360px;
 
   text-decoration: none;
 }
 
-.products-cards-link:hover {
-  opacity: 0.8;
+.products-cards-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .products-cards-link-new {
@@ -2033,6 +2036,58 @@ html {
   width: 760px;
 
   background-color: #f0f0f0;
+}
+
+.products-cards-link-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: none;
+  width: 360px;
+  height: 360px;
+
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
+.products-cards-link:hover .products-cards-link-hover {
+  display: block;
+}
+
+.products-cards-link-hover::before {
+  content: "Подробнее";
+
+  position: absolute;
+
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 800;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 3.6px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-image: linear-gradient(to bottom, transparent 40%, #ffe17f 40%, #ffe17f 60%, transparent 60%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.products-cards-link:hover .products-description-wrapper {
+  opacity: 0.6;
 }
 
 .pagination-list {

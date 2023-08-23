@@ -2066,8 +2066,6 @@ html {
   line-height: 20px;
   color: #444444;
   text-decoration: none;
-
-  opacity: 0.3;
 }
 
 .pagination-link.active {

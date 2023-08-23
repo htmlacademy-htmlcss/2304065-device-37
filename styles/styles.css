@@ -592,7 +592,7 @@ html {
 }
 
 .filters .filters-title {
-  margin-bottom: 35px;
+  margin-bottom: 47px;
   padding: 25px 0;
 }
 
@@ -1663,17 +1663,31 @@ html {
 .filters-form {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 47px;
 }
 
 .filters-legend {
+  position: relative;
+
   margin-bottom: 20px;
-  padding: 14px 0 0;
+  padding: 0;
 
   line-height: 20px;
   font-weight: 700;
   color: #000000;
   letter-spacing: -0.36px;
+}
+
+.filters-legend::before {
+  content: "";
+  top: -12px;
+
+  position: absolute;
+
+  width: 200px;
+  height: 2px;
+
+  background-color: #000000;
 }
 
 .products-filters {

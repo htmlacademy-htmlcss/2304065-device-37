@@ -533,6 +533,34 @@ html {
   opacity: 1;
 }
 
+.products .button-secondary {
+  padding: 18px 39px;
+
+  border: 3px solid #E5E5E5;
+}
+
+.products .button-secondary:hover:not(:disabled) {
+  transition: 0.1s ease-in-out;
+
+  border: 3px solid #000000;
+}
+
+.products .button-secondary:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.products .button-secondary:active {
+  transition: 0.1s ease-in-out;
+
+  opacity: 0.3;
+}
+
+.products .button-secondary:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 /* title */
 
 .title {

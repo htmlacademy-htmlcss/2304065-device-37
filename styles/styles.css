@@ -561,6 +561,10 @@ html {
   pointer-events: none;
 }
 
+.button-pagination {
+  padding: 25px;
+}
+
 /* title */
 
 .title {

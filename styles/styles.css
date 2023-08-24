@@ -2386,3 +2386,17 @@ html {
 .logo-link:active {
   opacity: 0.3;
 }
+
+/* popover */
+
+.popover {
+  position: absolute;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+
+
+  background-color: #000000;
+}

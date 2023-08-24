@@ -2494,3 +2494,13 @@ html {
 
   text-align: right;
 }
+
+.button-popover-basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  height: 50px;
+
+  background-color: #ffffff;
+}

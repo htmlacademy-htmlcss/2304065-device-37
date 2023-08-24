@@ -2391,6 +2391,8 @@ html {
 
 .popover {
   position: absolute;
+  top: 40px;
+  left: -140px;
   z-index: 5;
 
   display: flex;
@@ -2399,4 +2401,20 @@ html {
 
 
   background-color: #000000;
+}
+
+.popover::before {
+  content: "";
+
+  position: absolute;
+  top:-6px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 14px;
+  height: 6px;
+
+  background-image: url("../images/popover-up.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

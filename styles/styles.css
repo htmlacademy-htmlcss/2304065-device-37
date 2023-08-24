@@ -2420,7 +2420,11 @@ html {
 }
 
 .popover-visible {
-  /* display: none; */
+  display: none;
+}
+
+.button-basket:hover .popover-visible {
+  display: block;
 }
 
 .popover-list {
@@ -2449,6 +2453,26 @@ html {
   text-decoration: none;
 }
 
+.popover-link:hover,
+.button-popover-close:hover {
+  transition: 0.15s ease-in-out;
+
+  opacity: 0.6;
+}
+
+.popover-link:focus-visible,
+.button-popover-close:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.popover-link:active,
+.button-popover-close:active {
+  transition: 0.15s ease-in-out;
+
+  opacity: 0.3;
+}
+
 .popover-img-description {
   margin: 0;
   width: 160px;
@@ -2473,6 +2497,8 @@ html {
   background-image: url("../images/popover-close.svg");
   background-repeat: no-repeat;
   border: none;
+
+  cursor: pointer;
 }
 
 .popover-total {
@@ -2503,4 +2529,27 @@ html {
   height: 50px;
 
   background-color: #ffffff;
+}
+
+.button-popover-basket:hover {
+  transition: 0.15s ease-in-out;
+
+  background-color: #ffe17f;
+}
+
+.button-popover-basket:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.button-popover-basket:active {
+  transition: 0.15s ease-in-out;
+
+  color: #b3b3b3;
+}
+
+.button-popover-basket.disabled {
+  color: #b3b3b3;
+
+  pointer-events: none;
 }

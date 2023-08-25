@@ -654,7 +654,7 @@ html {
 
 .filters .filters-title {
   margin-bottom: 47px;
-  padding: 25px 0;
+  padding: 10px 0;
 }
 
 .filters-title,
@@ -1535,6 +1535,7 @@ html {
 }
 
 .catalog-wrapper {
+  margin-top: -5px;
   background-color: #f0f0f0;
 }
 
@@ -1665,7 +1666,7 @@ html {
 .catalog-main-header {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 11px;
   margin: 0 auto;
   padding: 35px 60px 34px;
   width: 1160px;

@@ -2875,6 +2875,8 @@ html {
 }
 
 .tooltip-wrapper {
+  position: relative;
+
   display: flex;
 }
 
@@ -2882,8 +2884,26 @@ html {
   display: none;
 }
 
+.button-tooltip {
+  position: relative;
+  top: -2px;
+
+  margin-left: 8px;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+
+  background-color: #ffe17f;
+  background-image: url("../images/information-black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+}
+
 .tooltip-description {
   position: absolute;
+  top: 33px;
   z-index: 9998;
 
   font-size: 16px;
@@ -2894,8 +2914,6 @@ html {
   padding: 19px 17px 0 19px;
   min-height: 160px;
   width: 200px;
-
-
 
   background-color: #000000;
 }

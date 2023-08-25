@@ -2571,13 +2571,44 @@ html {
   background-color: rgba(240, 240, 240, 0.90);
 }
 
+.modal-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.button-modal-close {
+  width: 26px;
+  height: 26px;
+
+  background-image: url("../images/modal-close.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.button-modal-close:hover {
+  opacity: 0.6;
+}
+
+.button-modal-close:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.button-modal-close:active {
+  opacity: 0.3;
+}
+
 .modal-content {
   position: relative;
 
   display: flex;
   flex-direction: column;
   gap: 42px;
-  width: 920px;
+  width: 940px;
 
   padding: 72px 80px;
   background-color: #ffffff;
@@ -2608,4 +2639,96 @@ html {
   color: #000000;
 
   margin-bottom: 14px;
+}
+
+.input-modal {
+  min-height: 60px;
+  padding: 20px;
+  margin: 0;
+
+  background-color: #f0f0f0;
+  border: none;
+}
+
+.input-name {
+  width: 360px;
+
+  background-image: url("../images/personal-area-grey.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.input-name::placeholder {
+  font-family: "Rubik";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.input-email {
+  width: 360px;
+
+  background-image: url("../images/email-grey.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.input-email::placeholder {
+  font-family: "Rubik";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.input-products {
+  width: 540px;
+}
+
+.input-amount {
+  width: 60px;
+}
+
+.input-products::placeholder {
+  font-family: "Rubik";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-form-descriprion {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  color: #000000;
+}
+
+.modal-form-descriprion-error {
+  color: #ff3d3d;
+}
+
+.input-amount-wrapper {
+  display: flex;
+}
+
+.button-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 60px;
+  height: 60px;
+
+  border: none;
+}
+
+.modal-form .button-primary {
+  width: 200px;
 }

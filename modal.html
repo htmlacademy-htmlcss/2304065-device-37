@@ -404,7 +404,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-wrapper">
+    <div class="modal-wrapper modal-wrapper-visible">
       <section class="modal-content">
         <div class="modal-content-wrapper">
           <h2 class="title">Доставка под заказ</h2>
@@ -415,27 +415,29 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="modal-form-wrapper">
             <label class="modal-form-title" for="name">Ваше имя:</label>
-            <input class="input-name" type="text" id="text" name="name" placeholder="Введите имя">
+            <input class="input-modal input-name" type="text" id="text" name="name" placeholder="Введите имя">
             <span class="modal-form-descriprion">Добавьте имя</span>
           </div>
           <div class="modal-form-wrapper">
-            <label class="modal-form-title" for="email">Ваш e-mail: </label>
-            <input class="input-email" type="email" id="email" name="delivery-email" placeholder="Почта">
+            <label class="modal-form-title" for="email">Ваш e-mail:</label>
+            <input class="input-modal input-email" type="email" id="email" name="delivery-email" placeholder="Введите e-mail">
             <span class="modal-form-descriprion modal-form-descriprion-error">Забавный у вас адрес</span>
           </div>
           <div class="modal-form-wrapper">
             <label class="modal-form-title" for="products">Что нужно привезти: </label>
-            <input class="input-products" type="text" id="products" name="products" placeholder="В свободной форме">
+            <input class="input-modal input-products" type="text" id="products" name="products" placeholder="В свободной форме">
           </div>
           <div class="modal-form-wrapper">
             <label class="modal-form-title" for="amount">Количество:</label>
-            <button class="button-amount button-minus" type="button">
-              <span class="visually-hidden">Уменьшить количество.</span>
-            </button>
-            <input class="input-amount" type="number" id="amount" name="products-amount" value="1">
-            <button class="button-amount button-plus" type="button">
-              <span class="visually-hidden">Увеличить кколичество.</span>
-            </button>
+            <div class="input-amount-wrapper">
+              <button class="button-amount button-minus" type="button">
+                <span class="visually-hidden">Уменьшить количество.</span>
+              </button>
+              <input class="input-modal input-amount" type="number" id="amount" name="products-amount" value="1">
+              <button class="button-amount button-plus" type="button">
+                <span class="visually-hidden">Увеличить кколичество.</span>
+              </button>
+            </div>
           </div>
           <button class="button button-primary" type="submit">Отправить</button>
         </form>

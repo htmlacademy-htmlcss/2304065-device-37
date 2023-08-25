@@ -2873,3 +2873,29 @@ html {
 .modal-form .button-primary {
   width: 200px;
 }
+
+.tooltip-wrapper {
+  display: flex;
+}
+
+.tooltip-visibility {
+  display: none;
+}
+
+.tooltip-description {
+  position: absolute;
+  z-index: 9998;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  margin: 0;
+  padding: 19px 17px 0 19px;
+  min-height: 160px;
+  width: 200px;
+
+
+
+  background-color: #000000;
+}

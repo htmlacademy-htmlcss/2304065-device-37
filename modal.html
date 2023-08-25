@@ -428,7 +428,13 @@
             <input class="input-modal input-products" type="text" id="products" name="products" placeholder="В свободной форме" autocomplete="off">
           </div>
           <div class="modal-form-wrapper">
-            <label class="modal-form-title" for="amount">Количество:</label>
+            <div class="tooltip-wrapper">
+              <label class="modal-form-title" for="amount">Количество:</label>
+              <button class="button-tooltip" type="button">
+                <span class="visually-hidden">Подробности.</span>
+              </button>
+              <p class="tooltip-description">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к&nbsp;провозу багажа.</p>
+            </div>
             <div class="input-amount-wrapper">
               <button class="button-amount button-minus" type="button">
                 <span class="visually-hidden">Уменьшить количество.</span>

@@ -2886,7 +2886,7 @@ html {
 
 .button-tooltip {
   position: relative;
-  top: -2px;
+  top: -4px;
 
   margin-left: 8px;
   padding: 0;
@@ -2899,6 +2899,15 @@ html {
   background-position: center;
   border-radius: 50%;
   border: none;
+}
+
+.button-tooltip:focus-visible {
+  outline: none;
+}
+
+.button-tooltip:hover + .tooltip-visibility,
+.button-tooltip:focus-visible + .tooltip-visibility {
+  display: block;
 }
 
 .tooltip-description {
@@ -2923,7 +2932,7 @@ html {
 
   position: absolute;
   top: -5px;
-  left: 127px;
+  left: 125px;
   z-index: 9998;
 
   width: 14px;

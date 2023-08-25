@@ -2034,7 +2034,8 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 760px;
-  height: 71px;
+
+  line-height: 0;
 
   background-color: #f0f0f0;
 }
@@ -2135,6 +2136,7 @@ html {
 .pagination-list {
   display: flex;
   justify-content: center;
+  margin: 0;
   padding: 0;
 
   list-style-type: none;

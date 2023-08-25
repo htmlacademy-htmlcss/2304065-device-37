@@ -2225,7 +2225,7 @@ html {
   display: flex;
   justify-content: space-between;
   width: 1160px;
-  margin: 62px auto 61px;
+  margin: 62px auto 52px;
 }
 
 .footer-address {
@@ -2274,7 +2274,7 @@ html {
   content: "";
 
   position: relative;
-  top: 64px;
+  top: 56px;
   left: 0;
 
   display: inline-block;
@@ -2294,9 +2294,13 @@ html {
 
 .footer-navigation-list {
   display: flex;
-  gap: 35px;
-  margin: 0 auto 62px;
+  gap: 30px;
+  margin: -4px 2px 56px 10px;
   padding: 0;
+}
+
+.footer-navigation-item:first-child {
+  margin-left: 8px;
 }
 
 .footer-navigation-link {
@@ -2333,7 +2337,7 @@ html {
   flex-direction: column;
   gap: 63px;
   width: 175px;
-  margin: 75px 0 0 auto;
+  margin: 72px 0 0 auto;
 }
 
 .footer-phone-link {
@@ -2363,13 +2367,16 @@ html {
 .footer-social-list {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: wrap;
-  margin: 0;
   padding: 0;
   width: 450px;
 
   list-style-type: none;
+}
+
+.footer-social-item:first-child {
+  margin-left: 16px;
 }
 
 .footer-social-link {
@@ -2404,6 +2411,7 @@ html {
 .logo-link {
   display: flex;
   justify-content: flex-end;
+  margin-top: -4px;
 }
 
 .logo-link:hover path {

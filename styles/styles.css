@@ -2571,6 +2571,10 @@ html {
   background-color: rgba(240, 240, 240, 0.90);
 }
 
+.modal-wrapper-visible {
+  display: none;
+}
+
 .modal-content-wrapper {
   display: flex;
   justify-content: space-between;
@@ -2880,7 +2884,7 @@ html {
   display: flex;
 }
 
-.tooltip-visibility {
+.tooltip-visible {
   display: none;
 }
 
@@ -2905,8 +2909,8 @@ html {
   outline: none;
 }
 
-.button-tooltip:hover + .tooltip-visibility,
-.button-tooltip:focus-visible + .tooltip-visibility {
+.button-tooltip:hover + .tooltip-visible,
+.button-tooltip:focus-visible + .tooltip-visible {
   display: block;
 }
 

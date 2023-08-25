@@ -30,6 +30,7 @@
             </li>
             <li class="index-menu-item">
               <a class="button button-menu button-basket" href="#"><span class="basket">2</span>Корзина</a>
+              <!-- удалите класс .popover-visible, чтобы открыть поповер -->
               <div class="popover popover-visible">
                 <ul class="popover-list">
                   <li class="popover-item">
@@ -110,6 +111,7 @@
         <div class="slider-wrapper">
           <h2 class="visually-hidden">Популярные товары.</h2>
           <ol class="slider-list">
+            <!-- скрывайте элементы слайдера с помощью класса .slider-visible -->
             <li class="slider-item active">
               <div class="img-wrapper">
                 <button class="slider-button slider-prev" type="button" disabled>
@@ -136,8 +138,7 @@
                 </ul>
               </div>
             </li>
-            <!--Здесь будет временно style="display:none" для скрытия остальных страниц слайдера-->
-            <li class="slider-item" style="display: none">
+            <li class="slider-item slider-visible">
               <div class="img-wrapper">
                 <button class="button slider-prev display" type="button">
                   <span class="visually-hidden">Предыдущий товар.</span>
@@ -159,7 +160,7 @@
                 </ul>
               </div>
             </li>
-            <li class="slider-item" style="display: none">
+            <li class="slider-item slider-visible">
               <div class="img-wrapper">
                 <button class="button slider-prev" type="button">
                   <span class="visually-hidden">Предыдущий товар.</span>
@@ -189,7 +190,6 @@
                 </ul>
               </div>
             </li>
-            <!--Здесь заканчивается скрытые элементы слайдера-->
           </ol>
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
@@ -259,25 +259,25 @@
               <button class="button button-primary">Кредит</button>
             </li>
           </ol>
+          <!-- скрывайте табы с помощью класса .tabs-visible -->
           <ol class="tabs-content">
             <li class="tabs-content-item">
               <h3 class="title">Доставка</h3>
               <p class="tabs-content-description">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
-            <!--Здесь будет временно style="display:none" для скрытия остальных страниц табов-->
-            <li class="tabs-content-item" style="display: none">
+            <li class="tabs-content-item tabs-visible">
               <h3 class="title">Гарантия</h3>
               <p class="tabs-content-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </li>
-            <li class="tabs-content-item" style="display: none">
+            <li class="tabs-content-item tabs-visible">
               <h3 class="title">Кредит</h3>
               <p class="tabs-content-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </li>
-            <!--Здесь заканчивается скрытые описания табов-->
           </ol>
         </div>
       </section>
       <section class="delivery">
+        <!-- клик, чтобы открыть страницу с модалкой -->
         <div class="delivery-wrapper">
           <a class="delivery-link" href="modal.html">
             <h2 class="title delivery-title">Доставим редкий товар под заказ</h2>
@@ -404,6 +404,7 @@
         </div>
       </div>
     </footer>
+    <!-- модалку можно открыть, удалив класс .modal-wrapper-visible -->
     <div class="modal-wrapper modal-wrapper-visible">
       <section class="modal-content">
         <div class="modal-content-wrapper">

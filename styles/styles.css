@@ -945,6 +945,10 @@ html {
   color: #ffffff;
 }
 
+.slider-visible {
+  display: none;
+}
+
 .img-wrapper {
   position: relative;
 
@@ -1234,6 +1238,10 @@ html {
 
   background-image: url("../images/index/credit.svg");
   background-repeat: no-repeat;
+}
+
+.tabs-visible {
+  display: none;
 }
 
 .tabs-content-description {

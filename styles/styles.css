@@ -2917,3 +2917,18 @@ html {
 
   background-color: #000000;
 }
+
+.tooltip-description::before {
+  content: "";
+
+  position: absolute;
+  top: -5px;
+  left: 127px;
+  z-index: 9998;
+
+  width: 14px;
+  height: 6px;
+
+  background-image: url("../images/popover-up.svg");
+  background-repeat: no-repeat;
+}

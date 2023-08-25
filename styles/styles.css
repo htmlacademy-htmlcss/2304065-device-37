@@ -2646,8 +2646,45 @@ html {
   padding: 20px;
   margin: 0;
 
+  font-family: "Rubik";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+
   background-color: #f0f0f0;
   border: none;
+}
+
+.input-modal:not(.input-amount):hover:not(:disabled) {
+  transition: 0.15s ease-in-out;
+
+  color: #b3b3b3;
+
+  background-color: #dcdcdc;
+}
+
+.input-modal:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.input-amount:focus {
+  outline: none;
+}
+
+.input-modal:disabled {
+  opacity: 0.3;
+}
+
+.input-modal:invalid {
+  outline: 2px solid #ff3d3d;
+  outline-offset: 0;
+}
+
+.input-modal:invalid + .modal-form-descriprion {
+  color: #ff3d3d;
 }
 
 .input-name {
@@ -2689,7 +2726,20 @@ html {
 }
 
 .input-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
+
+  text-align: center;
+
+  appearance: textfield;
+}
+
+.input-amount::-webkit-outer-spin-button,
+.input-amount::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .input-products::placeholder {
@@ -2710,15 +2760,18 @@ html {
   color: #000000;
 }
 
-.modal-form-descriprion-error {
+/* .modal-form-descriprion-error {
   color: #ff3d3d;
 }
+*/
 
 .input-amount-wrapper {
   display: flex;
 }
 
 .button-amount {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2727,7 +2780,88 @@ html {
   height: 60px;
 
   border: none;
+  cursor: pointer;
 }
+
+.button-amount:hover {
+  background-color: #ebebeb;
+}
+
+.button-minus::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 16px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.button-minus:hover::before {
+  transition: 0.15s ease-in-out;
+
+  opacity: 0.6;
+}
+
+.button-minus:active::before {
+  transition: 0.15s ease-in-out;
+
+  opacity: 0.3;
+}
+
+.button-plus::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 16px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.button-plus::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 2px;
+  height: 16px;
+
+  background-color: #000000;
+}
+
+.button-plus:hover::before {
+  transition: 0.15s ease-in-out;
+
+  opacity: 0.6;
+}
+
+.button-plus:hover::after {
+  transition: 0.15s ease-in-out;
+
+  opacity: 0.6;
+}
+
+.button-plus:active::after {
+  transition: 0.15s ease-in-out;
+
+  opacity: 0.3;
+}
+
+.button-plus:active::before {
+  transition: 0.15s ease-in-out;
+
+  opacity: 0.3;
+}
+
 
 .modal-form .button-primary {
   width: 200px;

@@ -2783,8 +2783,16 @@ html {
   cursor: pointer;
 }
 
-.button-amount:hover {
+.button-amount:hover:not(:disabled) {
   background-color: #ebebeb;
+}
+
+.button-amount:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.button-amount:disabled {
+  opacity: 0.3;
 }
 
 .button-minus::before {
@@ -2861,7 +2869,6 @@ html {
 
   opacity: 0.3;
 }
-
 
 .modal-form .button-primary {
   width: 200px;

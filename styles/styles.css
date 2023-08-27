@@ -2644,7 +2644,7 @@ html {
 .modal-content-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
 }
 
 .button-modal-close {
@@ -2678,9 +2678,9 @@ html {
   display: flex;
   flex-direction: column;
   gap: 42px;
-  width: 940px;
+  width: 920px;
 
-  padding: 72px 80px;
+  padding: 62px 70px;
   background-color: #ffffff;
   border: 10px solid #000000;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.10);

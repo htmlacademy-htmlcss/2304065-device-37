@@ -232,6 +232,10 @@ html {
   display: grid;
 }
 
+.catalog-toogler:focus-within .button-nav-toogler::before {
+  display: none;
+}
+
 .catalog-toogler-list-grid {
   display: grid;
 }
@@ -1521,7 +1525,8 @@ html {
   color: #b3b3b3;
   background-color: transparent;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-input-label:focus-visible {
@@ -1531,7 +1536,8 @@ html {
 
 .range-input-label::-webkit-outer-spin-button,
 .range-input-label::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1777,7 +1783,8 @@ html {
   background-repeat: no-repeat;
   background-position: right center;
   border: none;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .sorting-range:hover:not(:disabled) {
@@ -2129,7 +2136,8 @@ html {
 
 .footer-navigation-link:hover {
   color: #ffc700;
-  text-decoration: underline 2px;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
   text-underline-offset: 9px;
   transition: 0.15s ease-in-out;
 }
@@ -2160,7 +2168,7 @@ html {
 }
 
 .footer-phone-link:hover {
-  color: #ffc700
+  color: #ffc700;
   transition: 0.15s ease-in-out;
 }
 
@@ -2553,12 +2561,14 @@ html {
   align-items: center;
   width: 60px;
   text-align: center;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .input-amount::-webkit-outer-spin-button,
 .input-amount::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 

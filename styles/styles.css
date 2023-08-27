@@ -2457,8 +2457,8 @@ html {
 
 .popover {
   position: absolute;
-  top: 40px;
-  left: -140px;
+  top: 36px;
+  left: -143px;
   z-index: 5;
 
   display: flex;

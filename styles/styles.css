@@ -86,13 +86,12 @@ html {
   justify-content: center;
   align-items: center;
   width: 160px;
-  height: 40px;
-  padding: 10px;
+  padding: 10px 10px;
   margin-left: -2px;
 
   font-family: "Rubik", sans-serif;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 16px;
   font-weight: 400;
   text-transform: none;
   letter-spacing: 0;
@@ -724,17 +723,23 @@ html {
   align-items: center;
 }
 
+.form-search-label {
+  display: flex;
+  height: 100%;
+}
+
 .input-search {
   position: relative;
 
+  display: flex;
+  align-items: center;
   width: 359px;
-  height: 40px;
-  padding: 0 0 0 48px;
+  padding: 8px 0 9px 48px;
 
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 16px;
   font-weight: 400;
   color: #000000;
 

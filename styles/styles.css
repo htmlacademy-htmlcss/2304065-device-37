@@ -240,7 +240,11 @@ html {
   outline: 2px solid #af4fff;
 }
 
-.button-nav-toogler:focus-visible + .catalog-toogler-list-visible {
+.catalog-toogler:focus-within .catalog-toogler-list-visible {
+  display: grid;
+}
+
+.catalog-toogler-list-grid {
   display: grid;
 }
 

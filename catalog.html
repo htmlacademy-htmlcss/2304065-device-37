@@ -121,9 +121,9 @@
           </li>
         </ol>
       </header>
-      <div class="catalog-wrapper">
+      <section class="catalog-wrapper">
         <div class="catalog-wrapper-inner">
-          <section class="filters">
+          <div class="filters">
             <h2 class="title filters-title">Фильтр:</h2>
             <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="products-filters">
@@ -208,30 +208,30 @@
               </fieldset>
               <button class="button button-primary" type="submit">Показать</button>
             </form>
-          </section>
-          <section class="sorting">
-            <h2 class="title sorting-title">Сортировка:</h2>
-            <select class="sorting-range" aria-label="Сортировка.">
-              <option value="popular">Популярные</option>
-              <option value="price">Дорогие</option>
-              <option value="feedback">С отзывами</option>
-            </select>
-            <div class="button-wrapper">
-              <ul class="button-wrapper-list">
-                <li class="button-wrapper-item">
-                  <a class="button button-ascending" href="#">
-                    <span class="visually-hidden">По возрастанию.</span>
-                  </a>
-                </li>
-                <li class="button-wrapper-item">
-                  <a class="button button-descending" href="#">
-                    <span class="visually-hidden">По убыванию.</span>
-                  </a>
-                </li>
-              </ul>
+          </div>
+          <div class="sorting products">
+            <div class="sorting-wrapper">
+              <h2 class="title sorting-title">Сортировка:</h2>
+              <select class="sorting-range" aria-label="Сортировка.">
+                <option value="popular">Популярные</option>
+                <option value="price">Дорогие</option>
+                <option value="feedback">С отзывами</option>
+              </select>
+              <div class="button-wrapper">
+                <ul class="button-wrapper-list">
+                  <li class="button-wrapper-item">
+                    <a class="button button-ascending" href="#">
+                      <span class="visually-hidden">По возрастанию.</span>
+                    </a>
+                  </li>
+                  <li class="button-wrapper-item">
+                    <a class="button button-descending" href="#">
+                      <span class="visually-hidden">По убыванию.</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </section>
-          <section class="products">
             <h2 class="visually-hidden">Моноподы.</h2>
             <ul class="products-cards-list">
               <li class="products-cards-item">
@@ -285,7 +285,7 @@
             </ul>
             <a class="button button-secondary" href="#">Загрузить ещё</a>
             <div class="pagination-wrapper">
-              <a class="button button-pagination button-pagination-disabled">Назад</a>
+              <a class="button button-pagination button-pagination-prev button-pagination-disabled">Назад</a>
               <ol class="pagination-list">
                 <li class="pagination-item">
                   <a class="pagination-link pagination-link-active">1</a>
@@ -305,11 +305,11 @@
                   <a class="pagination-link" href="#">15</a>
                 </li>
               </ol>
-              <a class="button button-pagination" href="#">Вперёд</a>
+              <a class="button button-pagination button-pagination-next" href="#">Вперёд</a>
             </div>
-          </section>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="catalog-footer">
       <div class="footer-wrapper">

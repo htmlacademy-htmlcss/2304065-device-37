@@ -86,6 +86,7 @@ html {
   justify-content: center;
   align-items: center;
   width: 160px;
+  height: 100%;
   padding: 10px 10px;
   margin-left: -2px;
 
@@ -234,9 +235,18 @@ html {
   transition: 0.1s ease-in-out;
 }
 
-.catalog-toogler .button-nav-toogler:focus-visible {
+.catalog-toogler .button-nav-toogler:focus {
   outline-offset: 2px;
   outline: 2px solid #af4fff;
+}
+
+.catalog-toogler .button-nav-toogler:focus-within {
+  outline-offset: 2px;
+  outline: 2px solid #af4fff;
+}
+
+.button-nav-toogler:focus-visible + .catalog-toogler-list-visible {
+  display: grid;
 }
 
 .button-nav:hover {
@@ -776,6 +786,7 @@ html {
 .index-menu-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   width: 471px;
   margin: 0;
   padding: 0;

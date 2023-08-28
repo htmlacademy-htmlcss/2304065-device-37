@@ -2411,6 +2411,10 @@ html {
   display: none;
 }
 
+.modal-active {
+  display: flex;
+}
+
 .modal-content-wrapper {
   display: flex;
   justify-content: space-between;

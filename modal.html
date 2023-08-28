@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Интернет-магазин с редкими гаджетами, которые порадуют вашего внутреннего гика с доставкой по всей России">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -17,7 +15,7 @@
         </a>
         <nav class="index-menu">
           <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="form-search-label">
+            <label>
               <span class="visually-hidden">Поиск по сайту.</span>
               <input class="input-search" type="search" name="search" placeholder="Поиск по сайту" autocomplete="off">
             </label>
@@ -32,12 +30,11 @@
             </li>
             <li class="index-menu-item">
               <a class="button button-menu button-basket" href="#"><span class="basket">2</span>Корзина</a>
-              <!-- удалите класс .popover-visible, чтобы открыть поповер -->
               <div class="popover popover-visible">
                 <ul class="popover-list">
                   <li class="popover-item">
                     <a class="popover-link" href="">
-                      <img class="popover-img" src="images/catalog/product-1.jpg" width="39" height="43" alt="Простая селфи-палка с телефоном.">
+                      <img class="popover-img" src="images/catalog/product-1.jpg" width="39" height="41" alt="Простая селфи-палка с телефоном.">
                       <p class="popover-img-description">Любительская селфи-палка</p>
                     </a>
                     <button class="button-popover-close" type="button">
@@ -46,7 +43,7 @@
                   </li>
                   <li class="popover-item">
                     <a class="popover-link" href="">
-                      <img class="popover-img" src="images/catalog/product-2.jpg" width="39" height="43" alt="Простая селфи-палка с телефоном.">
+                      <img class="popover-img" src="images/catalog/product-2.jpg" width="39" height="41" alt="Простая селфи-палка с телефоном.">
                       <p class="popover-img-description">Профессиональная селфи-палка</p>
                     </a>
                     <button class="button-popover-close" type="button">
@@ -67,8 +64,7 @@
           <ul class="navigation-list">
             <li class="catalog-toogler">
               <a class="button button-nav-toogler" href="">Каталог товаров</a>
-              <!-- класс .catalog-toogler-list-visible для скрытия подменю -->
-              <ul class="catalog-toogler-list catalog-toogler-list-visible">
+              <ul class="catalog-toogler-list" style="display: none">
                 <li class="catalog-toogler-item">
                   <a class="catalog-toogler-link" href="#">Виртуальная реальность
                     </a>
@@ -114,7 +110,6 @@
         <div class="slider-wrapper">
           <h2 class="visually-hidden">Популярные товары.</h2>
           <ol class="slider-list">
-            <!-- скрывайте элементы слайдера с помощью класса .slider-visible -->
             <li class="slider-item active">
               <div class="img-wrapper">
                 <button class="slider-button slider-prev" type="button" disabled>
@@ -141,7 +136,8 @@
                 </ul>
               </div>
             </li>
-            <li class="slider-item slider-visible">
+            <!--Здесь будет временно style="display:none" для скрытия остальных страниц слайдера-->
+            <li class="slider-item" style="display: none">
               <div class="img-wrapper">
                 <button class="button slider-prev display" type="button">
                   <span class="visually-hidden">Предыдущий товар.</span>
@@ -163,7 +159,7 @@
                 </ul>
               </div>
             </li>
-            <li class="slider-item slider-visible">
+            <li class="slider-item" style="display: none">
               <div class="img-wrapper">
                 <button class="button slider-prev" type="button">
                   <span class="visually-hidden">Предыдущий товар.</span>
@@ -193,6 +189,7 @@
                 </ul>
               </div>
             </li>
+            <!--Здесь заканчивается скрытые элементы слайдера-->
           </ol>
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
@@ -262,27 +259,27 @@
               <button class="button button-primary">Кредит</button>
             </li>
           </ol>
-          <!-- скрывайте табы с помощью класса .tabs-visible -->
           <ol class="tabs-content">
             <li class="tabs-content-item">
               <h3 class="title">Доставка</h3>
               <p class="tabs-content-description">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
-            <li class="tabs-content-item tabs-visible">
+            <!--Здесь будет временно style="display:none" для скрытия остальных страниц табов-->
+            <li class="tabs-content-item" style="display: none">
               <h3 class="title">Гарантия</h3>
               <p class="tabs-content-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </li>
-            <li class="tabs-content-item tabs-visible">
+            <li class="tabs-content-item" style="display: none">
               <h3 class="title">Кредит</h3>
               <p class="tabs-content-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </li>
+            <!--Здесь заканчивается скрытые описания табов-->
           </ol>
         </div>
       </section>
       <section class="delivery">
-        <!-- клик, чтобы открыть страницу с модалкой -->
         <div class="delivery-wrapper">
-          <a class="delivery-link" href="modal.html">
+          <a class="delivery-link" href="#">
             <h2 class="title delivery-title">Доставим редкий товар под заказ</h2>
           </a>
         </div>
@@ -290,7 +287,7 @@
       <section class="information">
         <div class="about-us">
           <h2 class="title">О нас</h2>
-          <p class="about-us-description">Огромный выбор гаджетов не оставит равнодушным<br>гика, который есть в каждом из нас.</p>
+          <p class="about-us-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="about-us-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
           <ul class="about-us-list">
             <li class="about-us-item">Меловые линии</li>
@@ -301,7 +298,7 @@
         </div>
         <div class="contacts">
           <h2 class="title">Контакты</h2>
-          <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. <br>Заодно сможете проверить работоспособность покупки.</p>
+          <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
           <h3 class="contacts-title">Интернет-магазин «Девайс»</h3>
           <address>
             <p class="address-description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -320,7 +317,7 @@
           <h2 class="title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Еженедельный дайджест с обзорами новинок, длительными&nbsp;тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="field-email-label">
+            <label>
               <input class="field-email" type="email" name="user-email" placeholder="Ваш e-mail" autocomplete="off">
             </label>
             <button class="button button-tertiary" type="submit">Подписаться</button>
@@ -407,8 +404,7 @@
         </div>
       </div>
     </footer>
-    <!-- модалку можно открыть, удалив класс .modal-wrapper-visible -->
-    <div class="modal-wrapper modal-wrapper-visible">
+    <div class="modal-wrapper">
       <section class="modal-content">
         <div class="modal-content-wrapper">
           <h2 class="title">Доставка под заказ</h2>
@@ -454,14 +450,5 @@
         </form>
       </section>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"  type="text/javascript"></script>
-    <script>
-      $(document).ready(function(){
-        $(".button-nav-toogler").click(function(){
-          $(".catalog-toogler-list-visible").toggleClass("catalog-toogler-list-grid"); return false;
-        });
-      });
-    </script>
-    <script src="scripts/main.js"></script>
   </body>
 </html>
